@@ -1,0 +1,42 @@
+#include<stdio.h>
+int main()
+{
+	int num1, num2, cal;
+	printf("\t\t***Simple Calculator***\n");
+	printf("1:Addition  2:Subtraction  3:Multiplication  4:Division  5:Remainder\n");
+	printf("Enter the number, what want u to do: ");
+	scanf("%d", &cal);
+	printf("\n1st Number: ");
+	scanf("%d", &num1);
+	printf("2nd Number: ");
+	scanf("%d", &num2);
+	
+	switch (cal)
+	{
+		case 1:
+		printf("%d + %d = %d\n", num1, num2, num1+num2);
+		break;
+		
+		case 2:
+		printf("%d - %d = %d\n", num1, num2, num1-num2);
+		break;
+		
+		case 3:
+		printf("%d X %d = %d\n", num1, num2, num1*num2);
+		break;
+		
+		case 4:
+		printf("%d / %d = %d\n", num1, num2, num1/num2);
+		break;
+		
+		case 5:
+		printf("%d remainder of %d = %d\n", num1, num2, num1%num2);
+		break;
+		
+		default:
+		printf("\t\t **Invalid chosen, run again**\n");
+		break;
+	}
+	printf("\t\t   ***Thank You***\n");
+	return 0;
+}
